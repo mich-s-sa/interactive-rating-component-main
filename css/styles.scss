@@ -98,7 +98,6 @@ body {
                     justify-content: center;
                     margin: 5px;
                     background: none;
-                    // border: 1px solid #fff;
                     color: $mediumGrey;
                     background: $circleBackground;
                     cursor: pointer;
@@ -176,8 +175,6 @@ body {
             color: white;
             backface-visibility: hidden;
 
-            &__image {}
-
             &__response {
                 margin-top: 1rem;
                 padding-top: 1rem;
@@ -210,8 +207,6 @@ body {
         width: 325px;
         height: 360px;
 
-        &.is-flipped {}
-
         &__face {
             width: 275px;
 
@@ -220,14 +215,8 @@ body {
                 width: 275px;
                 margin: 24px;
 
-                &__icon {
-
-                    img {}
-                }
-
                 &__question {
                     font-size: 26px;
-
                 }
 
                 &__copy {
@@ -238,26 +227,15 @@ body {
                 &__scale {
                     margin-top: 0.5rem;
 
-
-                    .input {}
-
                     .button {
                         width: 42px;
                         height: 42px;
-
-
-                        &:hover {}
-
-                        &:before {}
-
                     }
 
                 }
 
                 &__submit {
                     margin-top: 0.5rem;
-
-                    &:hover {}
                 }
             }
 
@@ -266,13 +244,10 @@ body {
 
                 &__image {
                     transform: scale(0.8);
-
                 }
 
                 &__response {
                     height: 2rem;
-
-                    & .answer {}
                 }
 
                 &__heading {
@@ -280,18 +255,10 @@ body {
                     font-size: 24px;
                     font-weight: $fw-400;
                 }
-
-                &__copy {}
             }
         }
     }
 
-}
-
-@for $i from 1 through 5 {
-    #input-#{$i}:checked #answer-#{$i} {
-        display: inline;
-    }
 }
 
 .attribution {
